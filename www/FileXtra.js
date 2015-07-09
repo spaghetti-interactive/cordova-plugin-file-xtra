@@ -4,7 +4,14 @@ var
 var
   FileXtra = {
     getFreeDiskSpace: function (successCallback, errorCallback) {
-      exec(successCallback, errorCallback, 'FileXtra', 'getFreeDiskSpace', []);
+
+      var
+        done = function (result) {
+          var bytes = parseInt(result, 10);
+          successCallback(bytes);
+        };
+
+      exec(done, errorCallback, 'FileXtra', 'getFreeDiskSpace', []);
     }
   };
 
