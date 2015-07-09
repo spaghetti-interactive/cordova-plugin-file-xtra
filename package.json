@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-file-xtra",
+  "version": "0.1.0-alpha.1",
+  "description": "Cordova FileXtra Plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spaghetti-interactive/cordova-plugin-file-xtra.git"
+  },
+  "keywords": [
+    "cordova",
+    "file",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Adriano Di Giovanni <me@adrianodigiovanni.com> (http://adrianodigiovanni.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spaghetti-interactive/cordova-plugin-file-xtra/issues"
+  },
+  "homepage": "https://github.com/spaghetti-interactive/cordova-plugin-file-xtra#readme",
+  "cordova": {
+    "id": "cordova-plugin-file-xtra",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}

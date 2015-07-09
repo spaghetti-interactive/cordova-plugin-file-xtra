@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  id="it.spaghettiinteractive.cordova.filextra" version="0.1.0-alpha.1">
+
+  <name>FileXtra</name>
+  <description>Cordova FileXtra Plugin</description>
+  <license>MIT</license>
+  <keywords>cordova,file</keywords>
+  <repo>https://github.com/spaghetti-interactive/cordova-plugin-file-xtra.git</repo>
+  <issue>https://github.com/spaghetti-interactive/cordova-plugin-file-xtra/issues</issue>
+
+  <js-module src="www/FileXtra.js" name="FileXtra">
+    <clobbers target="FileXtra" />
+  </js-module>
+
+  <platform name="android">
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="FileXtra">
+                <param name="android-package" value="it.spaghettiinteractive.cordova.filextra.CDVFileXtra" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/CDVFileXtra.java" target-dir="src/it/spaghettiinteractive/cordova/filextra" />
+  </platform>
+
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="FileXtra">
+        <param name="ios-package" value="CDVFileXtra" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/CDVFileXtra.h" />
+    <source-file src="src/ios/CDVFileXtra.m" />
+  </platform>
+
+</plugin>
