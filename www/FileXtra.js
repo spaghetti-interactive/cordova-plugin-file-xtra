@@ -13,7 +13,7 @@ var
 
       exec(done, errorCallback, 'FileXtra', 'getFreeDiskSpace', []);
     },
-    getSize: function (path, successCallback, errorCallback) {
+    getSize: function (url, successCallback, errorCallback) {
 
       var
         done = function (result) {
@@ -21,7 +21,7 @@ var
           successCallback(bytes);
         };
 
-      exec(done, errorCallback, 'FileXtra', 'getSize', [ path ]);
+      exec(done, errorCallback, 'FileXtra', 'getSize', [ url ]);
     }
   };
 
