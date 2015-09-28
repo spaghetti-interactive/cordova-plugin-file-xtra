@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-  id="it.spaghettiinteractive.cordova.filextra" version="0.1.0-alpha.1">
+  id="it.spaghettiinteractive.cordova.filextra" version="0.1.0-alpha.2">
 
   <name>FileXtra</name>
   <description>Cordova FileXtra Plugin</description>
@@ -22,6 +22,7 @@
         </config-file>
 
         <source-file src="src/android/CDVFileXtra.java" target-dir="src/it/spaghettiinteractive/cordova/filextra" />
+        <source-file src="src/android/AssetCache.java" target-dir="src/it/spaghettiinteractive/cordova/filextra" />
   </platform>
 
   <platform name="ios">
