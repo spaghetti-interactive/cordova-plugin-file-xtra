@@ -1,5 +1,7 @@
 # cordova-plugin-file-xtra
 
+This plugin is in Alpha.
+
 ## Installation
 
 ```
